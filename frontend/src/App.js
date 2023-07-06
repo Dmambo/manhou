@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Features from "./components/Features/Features";
 import Quote from "./components/Quote/Quote";
-import Blog from "./components/Blog/Blog";
+// import Blog from "./components/Blog/Blog";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
@@ -36,7 +36,7 @@ function App() {
       {isMobile ? <ServiceMobile /> : <Services />}
       <Features />
       <Quote />
-      <Blog />
+      {/* <Blog /> */}
       <Subscribe />
       <Testimonials />
       <Footer />

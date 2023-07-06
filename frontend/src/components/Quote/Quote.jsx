@@ -53,7 +53,7 @@ const Quote = () => {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:3001/api/sendemail', formData);
+      const response = await axios.post('https://miec.onrender.com/api/sendemail', formData);
       console.log(response.data);
   
       // Show the popup message

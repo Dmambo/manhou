@@ -17,7 +17,7 @@
   
   .about__me {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background: #2f338c;
     color: white;
     gap: 40px;

@@ -18,7 +18,7 @@ const Subscribe = () => {
         setIsLoading(true);
        try {
         const data = { email: email }; // Create an object with the email property
-        const response = await axios.post('http://localhost:3001/api/subscribe', data);
+        const response = await axios.post('https://miec.onrender.com/api/subscribe', data);
         console.log(response.data);
 
          // Show the popup message

@@ -1,6 +1,6 @@
 .quoter {
     background: url('../../assets/quote.png');
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
     background-size: cover;
     background-position: center;
@@ -11,7 +11,7 @@
 
   .quote__container {
     display: flex;
-    gap: 100px;
+    gap: 46px;
     justify-content: space-between;
     /* align-items: center; */
     background: #2f338c;
@@ -211,16 +211,16 @@
   }
 
   .animation img{ 
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color: #2f338c;
-
+    margin-left: 0;
   }
 
-  .animation img{
+  /* .animation img{
     width: 500px;
     height: 500px;
-  }
+  } */
   
   @media screen and (max-width: 768px) {
 
@@ -230,7 +230,6 @@
       padding: 20px;
     }
 
-    /* mobile responsive */
     .quote__container {
       flex-direction: column;
       height: auto;
@@ -269,8 +268,29 @@
     }
 
   }
-  
-  @media screen and (max-width: 480px) {
 
+  @media screen and (max-width: 1024px) {
+    .quote__container {
+      gap: 50px;
+      height: auto;
+      padding: 40px;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .form {
+      height: auto;
+      padding: 30px;
+    }
+  
+    .quote__text {
+      width: 100%;
+    }
+  
+    .animation img {
+      width: 300px;
+      height: 300px;
+    }
   }
+  
   

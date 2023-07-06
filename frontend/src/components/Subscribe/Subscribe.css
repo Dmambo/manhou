@@ -1,0 +1,74 @@
+.subscribe {
+    background-image: url('../../assets/subscribe.png');
+    padding: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+.sub__content {
+    margin-left: 90px;
+    display: flex;    
+    justify-content: space-around;
+}
+
+.sub__text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.input input {
+    width: 350px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    text-indent: 10px;
+}
+
+.input button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    padding: 8px;
+    outline: none;
+    text-indent: 10px;
+    background-color: #137D6F;
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .subscribe {
+        padding: 20px;
+    }
+
+    .sub__content {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .input button {
+        width: 100%;
+    }
+}

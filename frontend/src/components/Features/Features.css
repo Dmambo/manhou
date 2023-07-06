@@ -1,0 +1,146 @@
+.feature {
+    position: relative;
+    background-image: url('../../assets/features.png');
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 80px;
+    color: white;
+    height: 80vh;
+  }
+  
+  .features {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    z-index: 1;
+    padding-top: 80px;
+    color: white;
+  }
+  
+  .feature__header {
+    margin: 50px 100px;
+    /* color: black; */
+    font-size: 40px;
+  }
+  
+  .feature__header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .feature__header h4 {
+    font-size: 30px;
+    line-height: 1.8;
+  }
+  
+  .feature__content {
+    padding: 50px;
+    gap: 80px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .feature__content__item {
+    background-color: #2f338c;
+    padding: 30px 20px;
+    width: 387px;
+  }
+  
+  .feature__content__item h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature__content__item p {
+    line-height: 1.8;
+    margin-right: 30px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media screen and (max-width: 1200px) {
+    .feature__content {
+      gap: 60px;
+      padding: 40px;
+    }
+  
+    .feature__content__item {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .feature__header {
+      margin: 50px 40px;
+      font-size: 32px;
+    }
+  
+    .feature__header h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .feature__header h4 {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .feature__header {
+      margin: 30px 20px;
+      font-size: 24px;
+    }
+  
+    .feature__header h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .feature__header h4 {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  
+    .feature__content {
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+  
+    .feature__content__item {
+      width: calc(50% - 40px);
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .feature__header {
+      margin: 20px 15px;
+      font-size: 20px;
+    }
+  
+    .feature__header h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .feature__header h4 {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  
+    .feature__content {
+      padding: 20px;
+    }
+  
+    .feature__content__item {
+      width: 100%;
+    }
+  }
+  

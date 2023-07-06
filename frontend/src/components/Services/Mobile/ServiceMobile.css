@@ -1,0 +1,34 @@
+.mobile {
+    background-image: url("../../../assets/plane.png");
+    height: 97vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.service__card__mobile {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.card__mobile  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__offer h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.service__list ul{
+    font-size: 18px;
+    line-height: 1.7;
+    float: left;
+}

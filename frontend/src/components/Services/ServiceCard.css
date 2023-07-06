@@ -1,0 +1,198 @@
+.service__card {
+    position: relative;
+}
+
+.card {
+    position: relative;
+    /* background: #f5f5f55f; */
+    /* border-radius: 8px; */
+    color: #ffffff;
+    padding: 16px;
+    /* border: 1px solid #232323; */
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    width: auto;
+    /* Remove fixed width */
+    height: auto;
+    /* Remove fixed height */
+}
+
+.card-hidden {
+    display: flex;
+    transform: translateY(200%);
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform .5s ease-in, opacity .3s ease-in;
+    opacity: 0;
+background: linear-gradient(180deg, rgba(19, 125, 111, 0.22) 99.99%, rgba(19, 125, 111, 0) 100%);
+        border-radius: 8px;
+        border: 1px solid #232323;
+            padding: 16px;
+}
+
+.card-hidden-mobile {
+    display: none;
+    /* transform: translateY(0); */
+    transform: translateY(200%);
+    flex-direction: column;
+    gap: .5rem;
+    transition: transform .5s ease-in, opacity .3s ease-in;
+    opacity: 0;
+background: linear-gradient(180deg, rgba(19, 125, 111, 0.22) 99.99%, rgba(19, 125, 111, 0) 100%);
+        border-radius: 8px;
+        border: 1px solid #232323;
+            padding: 16px;
+}
+
+.card-border {
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    left: 0;
+    top: 0;
+    border: 1px dashed #232323;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+/*Hovers*/
+.card:hover {
+    transform: translate(-15px, -15px);
+    border-color: #5bc0eb;
+}
+
+.card:hover .card-hidden {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card:hover .title {
+    transform: translateY(200%);
+}
+
+/*Text*/
+.title {
+    position: absolute;
+    bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: transform .25s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-in {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+/*Button*/
+.button {
+    display: inline-flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 24px;
+    font-weight: 600;
+    background-color: #5bc0eb;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #53aed4;
+}
+
+ul {
+    display: flex;
+    flex-direction:column;
+    list-style: none;
+}
+
+/* ServiceCard.css */
+
+.checkbox-input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #137D6F;
+    /* Set the checkbox border color to #137D6F */
+    border-radius: 3px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    top: 4px;
+}
+
+.checkbox-input[type="checkbox"]:checked {
+    background-color: #137D6F;
+    /* Set the background color of the checked checkbox to #137D6F */
+}
+
+.checkbox-input[type="checkbox"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.number {
+color: #137D6F;
+}
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    .service__card {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-border {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        position: relative;
+        bottom: 0;
+        transform: translateY(0);
+    }
+
+    .title-in {
+        font-size: 1rem;
+    }
+
+    .button {
+        margin-top: 1rem;
+    }
+
+    .card:hover {
+        transform: translate(15px, 15px);
+
+    }
+    
+    .card:hover .card-hidden {
+        transform: translateY(1);
+        opacity: 1;
+    }
+
+    .card-hidden-mobile {
+        display: flex;
+    }
+}

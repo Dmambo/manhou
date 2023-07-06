@@ -1,0 +1,125 @@
+.blog {
+    position: relative;
+    background-image: url('../../assets/blog.png');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 80px;
+    color: black;
+}
+
+.blogs {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.immage img {
+    height: 335px;
+    width: 550px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.news {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog__info {
+    width: 455px;
+    background: #2f338c;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    border-radius: 30px;
+    top: 60%;
+    z-index: 9999;
+    height: 235px;
+    margin-left: 25px;
+}
+
+.blog__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blog__text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.readmore a {
+    color: green;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.viewmore button {
+    color: #2f338c;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+
+    .immage img {
+        display: none;
+    height: 235px;
+    width: 350px;
+        border-radius: 10px;
+    }
+
+    .news {
+        flex-direction: column;
+        padding: 20px;
+        /* height: auto; */
+    }
+
+.blog__info {
+    width: 255px;
+    background: #2f338c;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    top: 2%;
+    z-index: 9999;
+    height: 235px;
+    margin-left: 25px;
+    position: relative;
+}
+
+
+.blog__info p {
+    font-size: 16px;
+}
+.blog__info h2 {
+    font-size: 16px;
+}
+
+.blog__content {
+    display: flex;
+    padding: 20px;
+}
+
+
+}

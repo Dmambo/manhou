@@ -1,0 +1,269 @@
+.quoter {
+    background: url('../../assets/quote.png');
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    padding: 70px;
+    display: flex;
+  }
+
+  .quote__container {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #2f338c;
+    height: 820px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .form {
+    /* position: absolute; */
+    background-color: rgba(255, 255, 255, 0.456);
+    color: black;
+    padding: 50px 20px;
+    height: 770px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+
+
+    box-shadow: 
+
+    0 0 0 20px rgba(255, 255, 255, 0.025);
+
+  }
+
+  form input, select {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+
+  
+  .form-row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* .preview-button {
+    margin-top: 20px;
+  } */
+  
+  .quote__text {
+    position: relative;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    width: 900px;
+    overflow: hidden;
+  }
+  
+
+  .quote__text  p{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote__text  p span{
+    font-size: 20px;
+    color: #06980a;
+  }
+
+
+  .submitbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .form-preview-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .form-preview-modal {
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+  }
+
+  .long__text p {
+    display: flex;
+  }
+  
+  .long__text p strong {
+    width: 220px; /* Adjust the width as per your needs */
+    flex-shrink: 0;
+  }
+  
+  .long__text p span {
+    flex-grow: 1;
+    overflow-wrap: break-word;
+  }
+
+  .form-preview-modal  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    /* float: left; */
+  }
+
+  .previewbutton {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .preview-button {
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .btns {
+    display: flex;
+    gap: 20px;
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .popup p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+  }
+  
+  .loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #fff; */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    z-index: 9999;
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .animation img{ 
+    width: 200px;
+    height: 200px;
+    background-color: #2f338c;
+
+  }
+
+  .animation {
+    background: #2f338c;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .quoter {
+      flex-direction: column-reverse;
+      height: auto;
+      padding: 20px;
+    }
+
+    /* mobile responsive */
+    .quote__container {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      width: 290px;
+      margin-right: 80px;
+    }
+
+    .form {
+      height: auto;
+      /* width: 100%; */
+      padding: 20px;
+    }
+
+    .form-row {
+      flex-direction: column;
+    }
+
+    .quote__text {
+      line-height: 2;
+
+      width: 300px;
+      overflow: hidden;
+    }
+    
+  
+    .quote__text  p{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+
+  }
+  

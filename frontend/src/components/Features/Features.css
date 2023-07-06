@@ -1,6 +1,6 @@
 .feature {
     position: relative;
-    background-image: url('../../assets/features.png');
+    background: url('../../assets/footer.png');
     background-position: center;
     background-size: cover;
     margin: 0;

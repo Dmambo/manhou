@@ -40,7 +40,7 @@ const Features = () => {
     ],
   };
   return (
-    <div className="feature">
+    <div className="feature" id="features">
       <div className="features">
         <div className="feature__header">
           <h2>FEATURES</h2>

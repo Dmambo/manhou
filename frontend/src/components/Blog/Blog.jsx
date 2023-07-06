@@ -44,7 +44,7 @@ const Blog = () => {
   const visibleNews = news.slice(0, visibleArticles);
 
   return (
-    <div className='blog'>
+    <div className='blog' id='blog'>
       <div className='blogs'>
         <div className='blog__content'>
           <div className='blog__text'>

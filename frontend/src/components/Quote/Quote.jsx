@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import Loader from '../Loader/Loader';
-// import Animate from './Form';
+import quote from '../../assets/quote.gif'
 
 import './Quote.css';
 
@@ -215,7 +215,7 @@ const Quote = () => {
               </p>
             </div>
             <div className="animation">
-              {/* <Animate /> */}
+              <img src={quote} alt='quote' />
 </div>
 
 

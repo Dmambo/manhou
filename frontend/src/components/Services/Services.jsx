@@ -13,7 +13,7 @@ const Services = () => {
     "Project Cargo Management",
   ];
   return (
-    <div className="services">
+    <div className="services" id="services">
       <div className="service__name">
         <h2>Our Services</h2>
       </div>
@@ -32,7 +32,7 @@ const Services = () => {
           <div className="cards">
             <ServiceCard
               number="02"
-              title="Ware housing"
+              title="Global forwarding"
               description="Our extensive fleet of flatbed trailers and specialized equipment allows us to handle a wide range of cargo, from large machinery and construction equipment to over sized industrial components. We meticulously plan and execute each transportation project, considering factors such as weight distribution, load securement, and route analysis to ensure the safe and efficient delivery of your valuable assets."
               subtitle="Flat bed and heavy haul"
               servicepara="Services we offer"

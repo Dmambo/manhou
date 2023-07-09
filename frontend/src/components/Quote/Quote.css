@@ -145,7 +145,6 @@
   .row {
     display: flex;
     justify-content: space-between;
-    /* float: left; */
   }
 
   .previewbutton {
@@ -196,18 +195,13 @@
     margin-top: 10px;
   }
   
+
   .loader {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: #fff; */
-    padding: 20px;
-    /* border: 1px solid #ccc; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     z-index: 9999;
-    width: 200px;
-    border-radius: 10px;
   }
 
   .animation img{ 
@@ -217,10 +211,10 @@
     margin-left: 0;
   }
 
-  /* .animation img{
+  .animation img{
     width: 500px;
     height: 500px;
-  } */
+  }
   
   @media screen and (max-width: 768px) {
 
@@ -240,7 +234,6 @@
 
     .form {
       height: auto;
-      /* width: 100%; */
       padding: 20px;
     }
 

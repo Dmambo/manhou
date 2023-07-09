@@ -17,10 +17,10 @@ const Navbar = () => {
   };
 
   const makeCall = () => {
-    // Replace `phone-number` with the actual phone number or call link
-    const phoneNumber = "+918273773558";
+    const phoneNumber = "tel:+14696018356"; // Replace with the desired phone number
+
     window.open(phoneNumber, "_blank");
-    // console.log("make call")
+
   };
 
   return (
@@ -43,8 +43,8 @@ const Navbar = () => {
         <a href="#testimonies" className="link active" onClick={closeMenu}>
           Testimonies
         </a>
-        <a href="#blog" className="link active" onClick={closeMenu}>
-          Blog
+        <a href="#commerce" className="link active" onClick={closeMenu}>
+          Store
         </a>
         <a href="#request" className="link  request" onClick={makeCall}>
           Request a call

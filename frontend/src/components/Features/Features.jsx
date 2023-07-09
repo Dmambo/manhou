@@ -45,7 +45,6 @@ const Features = () => {
         <div className="feature__header">
           <h2>FEATURES</h2>
           <h4>Powering shipping and logistics</h4>
-          {/* <img src={quote} alt="quote" /> */}
         </div>
         <div className="feature__content">
         <Slider {...settings}>

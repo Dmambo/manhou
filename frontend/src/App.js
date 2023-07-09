@@ -7,10 +7,14 @@ import Services from "./components/Services/Services";
 import Features from "./components/Features/Features";
 import Quote from "./components/Quote/Quote";
 // import Blog from "./components/Blog/Blog";
+import Shop from "./components/shop/shop";
+import Commerce from "./components/Commerce/Commerce";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
 import ServiceMobile from "./components/Services/Mobile/ServiceMobile";
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -28,7 +32,26 @@ function App() {
     };
   }, []);
 
+
+  const [route, setRoute] = useState('commerce');
+
+  const navigateTo = (routeName) => {
+    setRoute(routeName);
+  };
+
+  const renderComponent = () => {
+    switch (route) {
+      case 'commerce':
+        return <Commerce navigateTo={navigateTo} />;
+      case 'shop':
+        return <Shop navigateTo={navigateTo} />;
+      default:
+        return null;
+    }
+  };
+
   return (
+    <Router>
     <div className="App">
       <Navbar />
       <Hero />
@@ -37,10 +60,13 @@ function App() {
       <Features />
       <Quote />
       {/* <Blog /> */}
+
+      {renderComponent()}
       <Subscribe />
       <Testimonials />
       <Footer />
     </div>
+    </Router>
   );
 }
 

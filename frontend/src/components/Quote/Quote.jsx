@@ -29,16 +29,17 @@ const Quote = () => {
 
   const shipmentOptions = [
     { value: 'Select an option', label: 'select an option' },
-    { value: 'Box Dimension 18*18*24 ($130)', label: 'Box Dimension 18*18*24 ($130)' },
-    { value: 'Box Dimension 24*18*24 ($320)', label: 'Box Dimension 24*18*24 ($320)' },
-    { value: 'Box Dimension 18*18*28 ($180)', label: 'Box Dimension 18*18*28 ($180)' },
-    { value: 'Box Dimension 18*21*46 ($330)', label: 'Box Dimension 18*21*46 ($330)' },
-    { value: 'Tonneau Barrel-50 ($330)', label: 'Tonneau Barrel-50 ($330)' },
-    { value: 'Tonneau Barrel-53 ($380)', label: 'Tonneau Barrel-53 ($380)' },
-    { value: 'Palet ($580)', label: 'Palet ($580)' },
-    { value: 'Car ($2800)', label: 'Car ($2800)' },
-    { value: 'SUV/Jeep ($3200)', label: 'SUV/Jeep ($3200)' },
-    { value: 'Mattress ($280)', label: 'Mattress ($280)' },
+    { value: 'Box Dimension 18*18*24', label: 'Box Dimension 18*18*24' },
+    { value: 'Box Dimension 24*18*24', label: 'Box Dimension 24*18*24' },
+    { value: 'Box Dimension 18*18*28', label: 'Box Dimension 18*18*28' },
+    { value: 'Box Dimension 18*21*46', label: 'Box Dimension 18*21*46' },
+    { value: 'Tonneau Barrel-50', label: 'Tonneau Barrel-50' },
+    { value: 'Tonneau Barrel-53 ', label: 'Tonneau Barrel-53 ' },
+    { value: 'African food stuff', label: 'African food stuff' },
+    { value: 'Palet', label: 'Palet' },
+    { value: 'Car', label: 'Car' },
+    { value: 'SUV/Jeep', label: 'SUV/Jeep' },
+    { value: 'Mattress (', label: 'Mattress' },
   ];
 
   const handleInputChange = (e) => {

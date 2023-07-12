@@ -6,7 +6,6 @@ import About from "./components/About/About";
 import Services from "./components/Services/Services";
 import Features from "./components/Features/Features";
 import Quote from "./components/Quote/Quote";
-// import Blog from "./components/Blog/Blog";
 import Shop from "./components/shop/shop";
 import Commerce from "./components/Commerce/Commerce";
 import Subscribe from "./components/Subscribe/Subscribe";
@@ -59,7 +58,6 @@ function App() {
       {isMobile ? <ServiceMobile /> : <Services />}
       <Features />
       <Quote />
-      {/* <Blog /> */}
 
       {renderComponent()}
       <Subscribe />

@@ -1,5 +1,4 @@
 import React from 'react';
-// import truck from '../../assets/truck.gif'
 import './Loader.css'
 
 

@@ -109,10 +109,6 @@ width: 173px;
     left: 0;
 }
 
-/* .menu {
-    display: none;
-} */
-
 .nav__link .open {
     flex-direction: column;
   }

@@ -3,7 +3,6 @@ import twitter from "../../assets/twitter.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import "./Hero.css";
-// import Quote from './../Quote/Quote';
 import CountUp from 'react-countup';
 
 const Hero = () => {

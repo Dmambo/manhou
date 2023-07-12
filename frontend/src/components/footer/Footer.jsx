@@ -26,8 +26,8 @@ const Footer = () => {
         <a href="#testimonies" className="link active" >
           Testimonies
         </a>
-        <a href="#blog" className="link active" >
-          Blog
+        <a href="#commerce" className="link active" >
+          Store
         </a>
         <a href="#request" className="link  request">
           Request a call

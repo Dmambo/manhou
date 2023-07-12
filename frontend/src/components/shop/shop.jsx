@@ -4,7 +4,6 @@ import './shop.css';
 const Shop = ({ navigateTo }) => {
   return (
     <div className="shop" id="shop">
-      {/* <h2>OUR SHOP IS IN PRODUCTION</h2> */}
       <p><strong>We are currently in production.</strong></p>
         <p>Our shop will be available soon.</p>
         

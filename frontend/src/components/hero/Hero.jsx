@@ -4,6 +4,7 @@ import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import "./Hero.css";
 // import Quote from './../Quote/Quote';
+import CountUp from 'react-countup';
 
 const Hero = () => {
   return (
@@ -29,13 +30,15 @@ const Hero = () => {
 
         <div className="section__details">
           <p>
-            <span>50+</span> Cities around the world
+            <span>
+              <CountUp start={10} end={70} duration={4}/>+
+              </span> Cities around the world
           </p>
           <p>
-            <span>2M</span> Happy Clients
+            <span><CountUp start={1} end={6} duration={4}/>M</span> Happy Clients
           </p>
           <p>
-            <span>1.2M</span> Delivery goods every week
+            <span><CountUp start={1} end={5} duration={4}/>M</span> Delivery goods every week
           </p>
         </div>
       </div>

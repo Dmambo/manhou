@@ -8,7 +8,16 @@
 }
 
 .commerce__text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin: 30px;
+}
+
+.commerce button {
+  padding: 10px 15px;
+  font-weight: bold;
+  color: beige;
 }
 
 .commerce__text h2 {
